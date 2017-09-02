@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.iextrading.com/1.0/stock/AAPL/stats"
+    },
+    "response": {
+      "body": "{\"companyName\":\"Apple Inc.\",\"marketcap\":847097392000,\"beta\":1.267958,\"week52high\":164.52,\"week52low\":102.53,\"week52change\":57.297897,\"shortInterest\":39117077,\"shortDate\":\"2017-08-15\",\"dividendRate\":2.52,\"dividendYield\":1.5365853,\"exDividendDate\":\"2017-08-10 00:00:00.0\",\"latestEPS\":8.29,\"latestEPSDate\":\"2016-09-30\",\"sharesOutstanding\":5165228000,\"float\":5155519365,\"returnOnEquity\":35.53,\"consensusEPS\":2.02,\"numberOfEstimates\":14,\"symbol\":\"AAPL\",\"EBITDA\":74688000000,\"revenue\":223507000000,\"grossProfit\":86068000000,\"cash\":271467000000,\"debt\":381442000000,\"ttmEPS\":8.55,\"revenuePerShare\":43,\"revenuePerEmployee\":1926784,\"peRatioHigh\":\"N/A\",\"peRatioLow\":\"N/A\",\"EPSSurpriseDollar\":\"N/A\",\"EPSSurprisePercent\":3.9604,\"returnOnAssets\":14.15,\"returnOnCapital\":\"N/A\",\"profitMargin\":20.73,\"priceToSales\":3.7900262,\"priceToBook\":6.4,\"day200MovingAvg\":137.77939,\"day50MovingAvg\":152.9643,\"institutionPercent\":61.7,\"insiderPercent\":\"N/A\",\"shortRatio\":1.5008535,\"year5ChangePercent\":0.7013363865087812,\"year2ChangePercent\":0.4548598793898546,\"year1ChangePercent\":0.546182846371348,\"ytdChangePercent\":0.412397761515282,\"month6ChangePercent\":0.1975326666180013,\"month3ChangePercent\":0.07390678188007345,\"month1ChangePercent\":0.10300544611040155,\"day5ChangePercent\":0.01597820028488272}",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sat, 02 Sep 2017 09:56:58 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "1273",
+        "Connection": "keep-alive",
+        "set-cookie": "ctoken=89e1622c99144cfabb01dd60920bd251; Domain=.iextrading.com; Path=/; Expires=Sat, 02 Sep 2017 21:56:58 GMT; Secure",
+        "Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "X-Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "Frame-Options": "deny",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "ETag": "W/\"4f9-amkSHVPzaF0I6EB3T9zDaQ\"",
+        "Expires": "Sat, 02 Sep 2017 09:56:58 GMT",
+        "Cache-Control": "max-age=0",
+        "Strict-Transport-Security": "max-age=15768000",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.iextrading.com/1.0/stock/AAPL/financials"
+    },
+    "response": {
+      "body": "{\"symbol\":\"AAPL\",\"financials\":[{\"reportDate\":\"2017-06-30\",\"grossProfit\":17488000000,\"costOfRevenue\":27920000000,\"operatingRevenue\":45408000000,\"totalRevenue\":45408000000,\"operatingIncome\":10768000000,\"netIncome\":8717000000,\"researchAndDevelopment\":2937000000,\"operatingExpense\":6720000000,\"currentAssets\":112875000000,\"totalAssets\":345173000000,\"totalLiabilities\":212748000000,\"currentCash\":18571000000,\"currentDebt\":18475000000,\"totalCash\":76759000000,\"totalDebt\":108339000000,\"shareholderEquity\":132425000000,\"cashChange\":3414000000,\"cashFlow\":8363000000,\"operatingGainsLosses\":\"N/A\"},{\"reportDate\":\"2017-03-31\",\"grossProfit\":20591000000,\"costOfRevenue\":32305000000,\"operatingRevenue\":52896000000,\"totalRevenue\":52896000000,\"operatingIncome\":14097000000,\"netIncome\":11029000000,\"researchAndDevelopment\":2776000000,\"operatingExpense\":6494000000,\"currentAssets\":101990000000,\"totalAssets\":334532000000,\"totalLiabilities\":200450000000,\"currentCash\":15157000000,\"currentDebt\":13991000000,\"totalCash\":67101000000,\"totalDebt\":98522000000,\"shareholderEquity\":134082000000,\"cashChange\":-1214000000,\"cashFlow\":12523000000,\"operatingGainsLosses\":\"N/A\"},{\"reportDate\":\"2016-12-31\",\"grossProfit\":30176000000,\"costOfRevenue\":48175000000,\"operatingRevenue\":78351000000,\"totalRevenue\":78351000000,\"operatingIncome\":23359000000,\"netIncome\":17891000000,\"researchAndDevelopment\":2871000000,\"operatingExpense\":6817000000,\"currentAssets\":103332000000,\"totalAssets\":331141000000,\"totalLiabilities\":198751000000,\"currentCash\":16371000000,\"currentDebt\":13992000000,\"totalCash\":60452000000,\"totalDebt\":87549000000,\"shareholderEquity\":132390000000,\"cashChange\":-4113000000,\"cashFlow\":27056000000,\"operatingGainsLosses\":\"N/A\"},{\"reportDate\":\"2016-09-30\",\"grossProfit\":17813000000,\"costOfRevenue\":29039000000,\"operatingRevenue\":46852000000,\"totalRevenue\":46852000000,\"operatingIncome\":11761000000,\"netIncome\":9014000000,\"researchAndDevelopment\":2570000000,\"operatingExpense\":6052000000,\"currentAssets\":106869000000,\"totalAssets\":321686000000,\"totalLiabilities\":193437000000,\"currentCash\":20484000000,\"currentDebt\":11605000000,\"totalCash\":67155000000,\"totalDebt\":87032000000,\"shareholderEquity\":128249000000,\"cashChange\":2247000000,\"cashFlow\":16126000000,\"operatingGainsLosses\":\"N/A\"}]}",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sat, 02 Sep 2017 10:01:46 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "2260",
+        "Connection": "keep-alive",
+        "set-cookie": "ctoken=b6ef9ff98fbc4abd9f4db83fd5ca3ee5; Domain=.iextrading.com; Path=/; Expires=Sat, 02 Sep 2017 22:01:46 GMT; Secure",
+        "Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "X-Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "Frame-Options": "deny",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "ETag": "W/\"8d4-W9n9asN1+iLx0D3z6on+PA\"",
+        "Expires": "Sat, 02 Sep 2017 10:01:46 GMT",
+        "Cache-Control": "max-age=0",
+        "Strict-Transport-Security": "max-age=15768000",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

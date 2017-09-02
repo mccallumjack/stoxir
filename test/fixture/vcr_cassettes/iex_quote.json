@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.iextrading.com/1.0/stock/AAPL/quote"
+    },
+    "response": {
+      "body": "{\"symbol\":\"AAPL\",\"companyName\":\"Apple Inc.\",\"primaryExchange\":\"Nasdaq Global Select\",\"sector\":\"Technology\",\"calculationPrice\":\"close\",\"latestPrice\":null,\"latestSource\":\"N/A\",\"latestTime\":\"N/A\",\"latestVolume\":16559979,\"delayedPrice\":163.97,\"delayedPriceTime\":1504299599152,\"previousClose\":\"N/A\",\"change\":\"N/A\",\"changePercent\":\"N/A\",\"avgTotalVolume\":26303703,\"marketCap\":\"N/A\",\"peRatio\":\"N/A\",\"week52High\":164.94,\"week52Low\":null,\"ytdChange\":0.412397761515282}",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sat, 02 Sep 2017 09:24:22 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "458",
+        "Connection": "keep-alive",
+        "set-cookie": "ctoken=3361f8259afe4f38be43443dcd52bafa; Domain=.iextrading.com; Path=/; Expires=Sat, 02 Sep 2017 21:24:22 GMT; Secure",
+        "Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "X-Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "Frame-Options": "deny",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "ETag": "W/\"1ca-GaahP6vlt0A4yrp7nMJFbA\"",
+        "Expires": "Sat, 02 Sep 2017 09:24:22 GMT",
+        "Cache-Control": "max-age=0",
+        "Strict-Transport-Security": "max-age=15768000",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

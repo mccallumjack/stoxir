@@ -1,0 +1,38 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.iextrading.com/1.0/stock/AAPL/logo"
+    },
+    "response": {
+      "body": "{\"url\":\"https://storage.googleapis.com/iex/api/logos/AAPL.png\"}",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Sat, 02 Sep 2017 09:56:59 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "63",
+        "Connection": "keep-alive",
+        "set-cookie": "ctoken=6bb9c8eea67e417faeba3f21cfb845a6; Domain=.iextrading.com; Path=/; Expires=Sat, 02 Sep 2017 21:56:59 GMT; Secure",
+        "Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "X-Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "Frame-Options": "deny",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "ETag": "W/\"3f-Qm9fxGUNpua9kv19wQeYMg\"",
+        "Expires": "Sat, 02 Sep 2017 09:56:59 GMT",
+        "Cache-Control": "max-age=0",
+        "Strict-Transport-Security": "max-age=15768000",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

@@ -1,41 +1,29 @@
 defmodule Stoxir.IEx do
-  @endpoint "https://api.iextrading.com/1.0/stock/"
-  @simple_methods ~w(quote chart company key_stats news financials earnings logo price delayed_quote)a
+  import Stoxir.Api
+
+  @simple_methods ~w(quote chart company stats news logo price delayed_quote)a
 
   for method <- @simple_methods do
     def unquote(method)(symbol) do
-      get("#{symbol}/#{unquote(method) |> String.replace("_", "-")}")
+      get("#{symbol}/#{unquote(method) |> to_string |> String.replace("_", "-")}")
     end
   end
 
-  def chart(symbol, period) do
+  def chart(symbol, period) when period in ~w(1d 1m 3m 6m ytd 1y 2y 5w) do
     get("#{symbol}/chart/#{period}")
   end
+  def chart(_symbol, _period), do: {:error, "Period must be one of 1d, 1m, 3m, 6m, ytd, 1y, 2y, 5w"}
 
   def news(symbol, last) when last in (1..50) do
     get("#{symbol}/news/last/#{last}")
   end
+  def news(_symbol, _last), do: {:error, "Last must be between 1 and 50"}
 
-  def news(_symbol, _last) do
-    {:error, "Last must be between 1 and 50"}
+  def financials(symbol) do
+    get_with_root("#{symbol}/financials", :financials)
   end
 
-  defp get(path), do: get(path, {})
-  defp get(path, _options) do
-    @endpoint <> path
-    |> HTTPoison.get
-    |> handle_response
-    |> process_response_body
+  def earnings(symbol) do
+    get_with_root("#{symbol}/earnings", :earnings)
   end
-
-  defp handle_response({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: {:ok, body}
-
-  defp process_response_body({:ok, body}) do
-    body
-    |> Poison.decode!
-    |> decode_body
-  end
-
-  defp decode_body(body) when is_map(body), do: Enum.map(body, fn({k, v}) -> {String.to_atom(k), v} end)
-  defp decode_body(body) when is_list(body), do: Enum.map(body, &(decode_body &1))
 end
