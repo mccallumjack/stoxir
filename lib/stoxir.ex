@@ -83,7 +83,7 @@ defmodule Stoxir do
   defdelegate news(symbol), to: IEx
 
   @doc """
-  GET /symbol/news/range
+  GET /symbol/news/last/range
 
   ## Examples
 
