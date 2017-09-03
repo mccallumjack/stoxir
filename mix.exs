@@ -1,13 +1,20 @@
 defmodule Stoxir.Mixfile do
   use Mix.Project
 
+  @description """
+    Simple wrapper for the IEx Trading Stocks API (https://iextrading.com/developer/docs/#stocks)
+  """
+
   def project do
     [
       app: :stoxir,
       version: "0.1.0",
       elixir: "~> 1.5",
+      description: @description,
       start_permanent: Mix.env == :prod,
+      package: package(),
       deps: deps()
+
     ]
   end
 
@@ -25,4 +32,13 @@ defmodule Stoxir.Mixfile do
       {:ex_doc, ">= 0.0.0", only: :dev}
     ]
   end
+
+  defp package do
+    [
+      maintainers: ["mccallumjack"],
+      licenses: ["MIT"],
+      links: %{"Github" => "https://github.com/mccallumjack/stoxir"}
+    ]
+  end
+
 end

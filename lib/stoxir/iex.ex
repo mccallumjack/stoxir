@@ -1,4 +1,5 @@
 defmodule Stoxir.IEx do
+  @moduledoc false
   import Stoxir.Api
 
   @simple_methods ~w(quote chart company stats news logo price delayed_quote)a

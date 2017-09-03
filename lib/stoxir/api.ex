@@ -1,4 +1,5 @@
 defmodule Stoxir.Api do
+  @moduledoc false
   @endpoint "https://api.iextrading.com/1.0/stock/"
 
   def get(path), do: get(path, {})
