@@ -16,7 +16,9 @@ defmodule Stoxir.Api do
   end
 
   defp handle_response({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: {:ok, body}
+  defp handle_response({:ok, %HTTPoison.Response{status_code: 404, body: body}}), do: {:error, body}
 
+  defp process_response_body({:error, body}), do: {:error, body}
   defp process_response_body({:ok, body}) do
     body
     |> Poison.decode!
