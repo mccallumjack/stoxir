@@ -7,6 +7,13 @@ defmodule StoxirTest do
     HTTPoison.start
   end
 
+  test "call a symbol that does not exist" do
+    use_cassette "nonexistant_quote" do
+      {:error, message} = Stoxir.quote("NOTHING")
+      assert message == "Unknown symbol"
+    end
+  end
+
   test "quote" do
     use_cassette "iex_quote" do
       body = Stoxir.quote("AAPL")

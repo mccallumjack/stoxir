@@ -27,7 +27,7 @@ defmodule Stoxir.Api do
 
   defp decode_body({key, map}) when is_atom(key),    do: decode_body(map)
   defp decode_body(body)       when is_number(body), do: body
-  defp decode_body(body)       when is_map(body),    do: Enum.map(body, fn({k, v}) -> {k |> underscore |> String.to_atom, v} end)
+  defp decode_body(body)       when is_map(body),    do: Enum.map(body, fn({k, v}) -> {k |> underscore |> String.to_atom, v} end) |> Enum.into(%{})
   defp decode_body(body)       when is_list(body),   do: Enum.map(body, &(decode_body &1))
 
   defp underscore(camelCase), do: Macro.underscore(camelCase)
