@@ -8,8 +8,8 @@ defmodule Stoxir.Mixfile do
   def project do
     [
       app: :stoxir,
-      version: "0.1.1",
-      elixir: "~> 1.5",
+      version: "0.1.2",
+      elixir: "~> 1.6",
       description: @description,
       start_permanent: Mix.env == :prod,
       package: package(),
