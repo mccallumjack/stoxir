@@ -27,4 +27,8 @@ defmodule Stoxir.IEx do
   def earnings(symbol) do
     get_with_root("#{symbol}/earnings", :earnings)
   end
+
+  def batch(symbols, metrics) do
+    get("market/batch?symbols=#{Enum.join(symbols, ",")}&types=#{Enum.join(metrics, ",")}")
+  end
 end

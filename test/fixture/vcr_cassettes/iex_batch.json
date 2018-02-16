@@ -1,0 +1,35 @@
+[
+  {
+    "request": {
+      "body": "",
+      "headers": [],
+      "method": "get",
+      "options": [],
+      "request_body": "",
+      "url": "https://api.iextrading.com/1.0/stock/market/batch?symbols=AAPL,TSLA&types=quote,stats"
+    },
+    "response": {
+      "body": "{\"AAPL\":{\"quote\":{\"symbol\":\"AAPL\",\"companyName\":\"Apple Inc.\",\"primaryExchange\":\"Nasdaq Global Select\",\"sector\":\"Technology\",\"calculationPrice\":\"close\",\"open\":169.85,\"openTime\":1518705000709,\"close\":172.99,\"closeTime\":1518728400253,\"high\":173.09,\"low\":169,\"latestPrice\":172.99,\"latestSource\":\"Close\",\"latestTime\":\"February 15, 2018\",\"latestUpdate\":1518728400253,\"latestVolume\":50909452,\"iexRealtimePrice\":172.96,\"iexRealtimeSize\":100,\"iexLastUpdated\":1518728398404,\"delayedPrice\":172.99,\"delayedPriceTime\":1518731985955,\"previousClose\":167.37,\"change\":5.62,\"changePercent\":0.03358,\"iexMarketPercent\":0.03502,\"iexVolume\":1782849,\"avgTotalVolume\":40626469,\"iexBidPrice\":0,\"iexBidSize\":0,\"iexAskPrice\":0,\"iexAskSize\":0,\"marketCap\":877753508870,\"peRatio\":18.8,\"week52High\":180.1,\"week52Low\":134.62,\"ytdChange\":-0.02838732149076969},\"stats\":{\"companyName\":\"Apple Inc.\",\"marketcap\":849237555810,\"beta\":1.240321,\"week52high\":180.1,\"week52low\":134.62,\"week52change\":25.920502,\"shortInterest\":42078657,\"shortDate\":\"2018-01-31\",\"dividendRate\":2.52,\"dividendYield\":1.5056462,\"exDividendDate\":\"2018-02-09 00:00:00.0\",\"latestEPS\":9.2,\"latestEPSDate\":\"2017-09-30\",\"sharesOutstanding\":5074013000,\"float\":5064179169,\"returnOnEquity\":34.7,\"consensusEPS\":1.87,\"numberOfEstimates\":10,\"EPSSurpriseDollar\":null,\"EPSSurprisePercent\":10.6952,\"symbol\":\"AAPL\",\"EBITDA\":79386000000,\"revenue\":239176000000,\"grossProfit\":91922000000,\"cash\":295194000000,\"debt\":444941000000,\"ttmEPS\":9.2,\"revenuePerShare\":47,\"revenuePerEmployee\":1944520,\"peRatioHigh\":114.1,\"peRatioLow\":0,\"returnOnAssets\":12.88,\"returnOnCapital\":null,\"profitMargin\":20.67,\"priceToSales\":3.4864004,\"priceToBook\":5.95,\"day200MovingAvg\":158.79527,\"day50MovingAvg\":170.04391,\"institutionPercent\":62.2,\"insiderPercent\":null,\"shortRatio\":1.339517,\"year5ChangePercent\":1.5460508601687633,\"year2ChangePercent\":0.7318915562913908,\"year1ChangePercent\":0.2351117998671686,\"ytdChangePercent\":-0.02838732149076969,\"month6ChangePercent\":0.03570544554455452,\"month3ChangePercent\":-0.01011355571327187,\"month1ChangePercent\":-0.05005959475566146,\"day5ChangePercent\":0.07876248791492103,\"day30ChangePercent\":-0.02821808047378497}},\"TSLA\":{\"quote\":{\"symbol\":\"TSLA\",\"companyName\":\"Tesla Inc.\",\"primaryExchange\":\"Nasdaq Global Select\",\"sector\":\"Consumer Cyclical\",\"calculationPrice\":\"close\",\"open\":324.37,\"openTime\":1518705000430,\"close\":334.065,\"closeTime\":1518728400372,\"high\":334.12,\"low\":322.4,\"latestPrice\":334.065,\"latestSource\":\"Close\",\"latestTime\":\"February 15, 2018\",\"latestUpdate\":1518728400372,\"latestVolume\":5908541,\"iexRealtimePrice\":334.035,\"iexRealtimeSize\":29,\"iexLastUpdated\":1518728398544,\"delayedPrice\":334.32,\"delayedPriceTime\":1518731978957,\"previousClose\":322.31,\"change\":11.755,\"changePercent\":0.03647,\"iexMarketPercent\":0.0185,\"iexVolume\":109308,\"avgTotalVolume\":6077145,\"iexBidPrice\":0,\"iexBidSize\":0,\"iexAskPrice\":0,\"iexAskSize\":0,\"marketCap\":56416280516,\"peRatio\":-29.2,\"week52High\":389.61,\"week52Low\":242.01,\"ytdChange\":0.005553302342994508},\"stats\":{\"consensusEPS\":-3.75,\"numberOfEstimates\":1,\"EPSSurpriseDollar\":null,\"EPSSurprisePercent\":-2.4,\"symbol\":\"TSLA\",\"EBITDA\":-101770000,\"revenue\":11758751000,\"grossProfit\":2222487000,\"cash\":13940461000,\"debt\":36414768000,\"ttmEPS\":-11.44,\"revenuePerShare\":70,\"revenuePerEmployee\":661273,\"returnOnEquity\":-42.12,\"peRatioHigh\":0,\"peRatioLow\":0,\"companyName\":\"Tesla Inc.\",\"marketcap\":54431117816,\"beta\":1.067257,\"week52high\":389.61,\"week52low\":242.01,\"week52change\":14.7092,\"shortInterest\":29805706,\"shortDate\":\"2018-01-31\",\"dividendRate\":0,\"dividendYield\":0,\"exDividendDate\":0,\"latestEPS\":-11.79,\"latestEPSDate\":\"2017-12-31\",\"sharesOutstanding\":168878154,\"float\":168327199,\"returnOnAssets\":-7.46,\"returnOnCapital\":null,\"profitMargin\":-18.9,\"priceToSales\":4.648377,\"priceToBook\":11.6,\"day200MovingAvg\":337.0853,\"day50MovingAvg\":331.0598,\"institutionPercent\":59.4,\"insiderPercent\":null,\"shortRatio\":5.036712,\"year5ChangePercent\":7.7016738660907125,\"year2ChangePercent\":1.077141199974222,\"year1ChangePercent\":0.15209465255933663,\"ytdChangePercent\":0.005553302342994508,\"month6ChangePercent\":-0.11045179808461895,\"month3ChangePercent\":0.035367812399614486,\"month1ChangePercent\":-0.05219667117567488,\"day5ChangePercent\":0.022459791263521822,\"day30ChangePercent\":0.015949566587864467}}}",
+      "headers": {
+        "Server": "nginx",
+        "Date": "Fri, 16 Feb 2018 02:46:49 GMT",
+        "Content-Type": "application/json; charset=utf-8",
+        "Content-Length": "4266",
+        "Connection": "keep-alive",
+        "set-cookie": "ctoken=7c96bf298c93459388ab77a6782580c9; Domain=.iextrading.com; Path=/; Expires=Fri, 16 Feb 2018 14:46:49 GMT; Secure",
+        "Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "X-Content-Security-Policy": "default-src 'self'; child-src 'none'; object-src 'none'; style-src 'self' 'unsafe-inline'; font-src data:; connect-src 'self' https://auth.iextrading.com wss://iextrading.com wss://tops.iextrading.com; script-src 'self';",
+        "Frame-Options": "deny",
+        "X-Frame-Options": "deny",
+        "X-Content-Type-Options": "nosniff",
+        "Strict-Transport-Security": "max-age=15768000",
+        "Access-Control-Allow-Origin": "*",
+        "Access-Control-Allow-Credentials": "true",
+        "Access-Control-Allow-Methods": "GET",
+        "Access-Control-Allow-Headers": "Origin, X-Requested-With, Content-Type, Accept"
+      },
+      "status_code": 200,
+      "type": "ok"
+    }
+  }
+]

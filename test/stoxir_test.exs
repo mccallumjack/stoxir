@@ -115,4 +115,11 @@ defmodule StoxirTest do
       assert is_number(body[:delayed_price])
     end
   end
+
+  test "batch" do
+    use_cassette "iex_batch" do
+      body = Stoxir.batch(["AAPL", "TSLA"], ["quote", "stats"])
+      assert body.aapl.quote.symbol == "AAPL"
+    end
+  end
 end

@@ -12,7 +12,6 @@ defmodule Stoxir.Api do
 
   def get_with_root(path, root) do
     get(path)[root]
-    |> decode_body
   end
 
   defp handle_response({:ok, %HTTPoison.Response{status_code: 200, body: body}}), do: {:ok, body}
@@ -26,9 +25,9 @@ defmodule Stoxir.Api do
   end
 
   defp decode_body({key, map}) when is_atom(key),    do: decode_body(map)
-  defp decode_body(body)       when is_number(body), do: body
-  defp decode_body(body)       when is_map(body),    do: Enum.map(body, fn({k, v}) -> {k |> underscore |> String.to_atom, v} end) |> Enum.into(%{})
+  defp decode_body(body)       when is_map(body),    do: Enum.map(body, fn({k, v}) -> {k |> underscore |> String.to_atom, decode_body(v)} end) |> Enum.into(%{})
   defp decode_body(body)       when is_list(body),   do: Enum.map(body, &(decode_body &1))
+  defp decode_body(body),                            do: body
 
   defp underscore(camelCase), do: Macro.underscore(camelCase)
 end

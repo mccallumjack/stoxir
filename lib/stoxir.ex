@@ -159,4 +159,17 @@ defmodule Stoxir do
   """
   @spec delayed_quote(binary) :: [key: binary | number]
   defdelegate delayed_quote(symbol), to: IEx
+
+  @doc """
+  GET /market/batch?symbols=?&types=?
+
+  ## Examples
+
+      Stoxir.batch(["AAPL", "TSLA"], ["quote", "stats"])
+
+  ## Reference
+  https://iextrading.com/developer/docs/#batch-requests
+  """
+  @spec batch(list, list) :: %{string: map}
+  defdelegate batch(symbols, types), to: IEx
 end
