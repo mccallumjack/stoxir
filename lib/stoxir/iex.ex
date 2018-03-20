@@ -31,4 +31,8 @@ defmodule Stoxir.IEx do
   def batch(symbols, metrics) do
     get("market/batch?symbols=#{Enum.join(symbols, ",")}&types=#{Enum.join(metrics, ",")}")
   end
+
+  def batch(symbols, metrics, params) do
+    get("market/batch?symbols=#{Enum.join(symbols, ",")}&types=#{Enum.join(metrics, ",")}&#{URI.encode_query(params)}")
+  end
 end

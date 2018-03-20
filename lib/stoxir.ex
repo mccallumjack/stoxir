@@ -172,4 +172,7 @@ defmodule Stoxir do
   """
   @spec batch(list, list) :: %{string: map}
   defdelegate batch(symbols, types), to: IEx
+
+  @spec batch(list, list, list) :: %{string: map}
+  defdelegate batch(symbols, types, params), to: IEx
 end

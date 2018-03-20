@@ -122,4 +122,14 @@ defmodule StoxirTest do
       assert body.aapl.quote.symbol == "AAPL"
     end
   end
+
+  test "batch with additional params" do
+    use_cassette "iex_batch_chart" do
+      body = Stoxir.batch(["AAPL", "TSLA"], ["quote", "stats", "chart"], [range: "1d", last: "1"])
+      assert body.aapl.quote.symbol == "AAPL"
+      [head | tail] = body.aapl.chart
+
+      assert head.minute == "09:30"
+    end
+  end
 end
