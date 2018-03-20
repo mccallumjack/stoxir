@@ -20,7 +20,7 @@ defmodule Stoxir.Api do
   defp process_response_body({:error, body}), do: {:error, body}
   defp process_response_body({:ok, body}) do
     body
-    |> Poison.decode!
+    |> Jason.decode!
     |> decode_body
   end
 
